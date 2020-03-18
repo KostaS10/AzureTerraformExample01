@@ -42,5 +42,5 @@ resource "azurerm_public_ip" "pip" {
   name                = var.pip_name
   location            = var.location
   resource_group_name = azurerm_resource_group.rg.name
-  allocation_method   = "Static"
+  allocation_method   = var.pip_allocation
   }
